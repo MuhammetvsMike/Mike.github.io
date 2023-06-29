@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="./index.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 mx-auto my-3">
+        <div class="box p-3">
+          <div class="input-part pb-5">
+            <div class="day">
+              <label for="d-input" class="d-label d-block ">day</label>
+              <input type="text" class="d-input " placeholder="DD">
+              <div class="error-sub error">This field is required</div>
+            </div>
+            <div class="month">
+              <label for="m-input" class="m-label d-block">month</label>
+              <input type="text" class="m-input" placeholder="MM">
+              <div class="error-sub error">This field is required</div>
+            </div>
+            <div class="year">
+              <label for="y-input" class="y-label d-block">year</label>
+              <input type="text" class="y-input" placeholder="YYYY">
+              <div class="error-sub error">This field is required</div>
+            </div>
+            <button class="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                </g>
+              </svg>
+            </button>
+          </div>
+
+          <div class="output-part mt-3">
+            <div class="output-year">
+              <span class="y-output">--</span><span class="text"> years</span>
+            </div>
+            <div class="output-month">
+              <span class="m-output">--</span><span class="text"> month</span>
+            </div>
+            <div class="output-day">
+              <span class="d-output">--</span><span class="text"> day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
